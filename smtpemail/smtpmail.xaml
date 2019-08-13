@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="408,560" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="smtpmail" this:smtpmail.email="aljeborimohammed@gmail.com" this:smtpmail.password="[myPw]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="email" Type="InArgument(x:String)" />
+    <x:Property Name="password" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>408,419</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>smtpmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
       <x:String>System.Activities</x:String>
@@ -22,7 +31,7 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>UiPath.Database</x:String>
+      <x:String>System.Security</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -31,6 +40,7 @@
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
@@ -45,27 +55,22 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>UiPath.Database</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="368,440" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="smtpmail" sap:VirtualizedContainerService.HintSize="368,299" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="ui:DatabaseConnection" Name="connStr" />
-      <Variable x:TypeArguments="sd:DataTable" Name="myTB" />
-      <Variable x:TypeArguments="x:String" Name="mydata" />
+      <Variable x:TypeArguments="x:String" Name="myPw" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:DatabaseConnect DatabaseConnection="[connStr]" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Driver={MySQL ODBC 5.2 ANSI Driver};server=localhost;uid=root;pwd=Moh_mysql69;database=sakila;port=3306" />
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[myTB]" DisplayName="Execute Query" ExistingDbConnection="[connStr]" sap:VirtualizedContainerService.HintSize="330,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="select   last_name from customer ">
-      <ui:ExecuteQuery.Parameters>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:ExecuteQuery.Parameters>
-    </ui:ExecuteQuery>
-    <ui:OutputDataTable DataTable="[myTB]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[mydata]" />
-    <ui:MessageBox Caption="{x:Null}" Buttons="Ok" ChosenButton="[mydata]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="330,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[mydata]" TopMost="True" />
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9Vyb6tbyJkeCPUovZpE6mAAAAAACAAAAAAAQZgAAAAEAACAAAABta/6irSWPeV1lu3c0AICE4aRH6vwoFWWM7490l69DzQAAAAAOgAAAAAIAACAAAAAiE2yKaXe1rwY5RDgPB9G9VR3RWYDLpUh96psDODKAUhAAAAAnhkGRbKiCsa2C63cfYicZQAAAAKKaOeCb9LsSRzw4AkpUxwqubMdHh6ssN2fcN93S4UVtK7PW3t6Jigt7QAhn6P32eDoV93xZcpCr51ZYzwe/eBo=" Result="[myPw]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body=" Hello first emial from uipath using smtp" DisplayName="Send SMTP Mail Message" Email="[email]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="330,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="Mohammed Mohammed" Password="[myPw]" Port="465" SecureConnection="SslOnConnect" Server="smtp.gmail.com" Subject="UIPATH" To="mlool86@yahoo.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendMail.Files>
+    </ui:SendMail>
   </Sequence>
 </Activity>

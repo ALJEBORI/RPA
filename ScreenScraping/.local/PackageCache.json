@@ -2,30 +2,6 @@
   "Packages": [
     {
       "Package": {
-        "Id": "MySql.Data",
-        "Version": "8.0.17"
-      },
-      "Assemblies": [
-        "C:\\Users\\HB\\.nuget\\packages\\bouncycastle/1.8.3.1\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\google.protobuf/3.6.1\\lib/net45/Google.Protobuf.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\mysql.data/8.0.17\\lib/net452/MySql.Data.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\ssh.net/2016.1.0\\lib/net40/Renci.SshNet.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Database.Activities",
-        "Version": "1.2.6863.32528"
-      },
-      "Assemblies": [
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.database.activities/1.2.6863.32528\\lib/net40-Client/Microsoft.Data.ConnectionUI.Dialog.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.database.activities/1.2.6863.32528\\lib/net40-Client/UiPath.Database.Activities.Design.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.database.activities/1.2.6863.32528\\lib/net40-Client/UiPath.Database.Activities.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.database.activities/1.2.6863.32528\\lib/net40-Client/UiPath.Database.dll"
-      ]
-    },
-    {
-      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.6.2"
       },
@@ -34,10 +10,10 @@
         "C:\\Users\\HB\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\HB\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
         "C:\\Users\\HB\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\HB\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\HB\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
         "C:\\Users\\HB\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
         "C:\\Users\\HB\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
         "C:\\Users\\HB\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.dll",
@@ -50,7 +26,7 @@
         "Version": "1.5.1"
       },
       "Assemblies": [
-        "C:\\Users\\HB\\.nuget\\packages\\bouncycastle/1.8.3.1\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\HB\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
         "C:\\Users\\HB\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
         "C:\\Users\\HB\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
         "C:\\Users\\HB\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
@@ -92,10 +68,10 @@
       },
       "Assemblies": [
         "C:\\Users\\HB\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
         "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
         "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
         "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\HB\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\HB\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
@@ -121,20 +97,11 @@
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRECommon.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Microsoft.dll",
         "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "ztools.other.MySql.Data",
-        "Version": "6.9.8"
-      },
-      "Assemblies": [
-        "C:\\Users\\HB\\.nuget\\packages\\ztools.other.mysql.data/6.9.8\\lib/net45/MySql.Data.dll"
+        "C:\\Users\\HB\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll"
       ]
     }
   ],
@@ -147,7 +114,7 @@
     },
     "BouncyCastle": {
       "Id": "BouncyCastle",
-      "Version": "1.8.3.1",
+      "Version": "1.8.1",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -173,11 +140,6 @@
     "Extended.Wpf.Toolkit": {
       "Id": "Extended.Wpf.Toolkit",
       "Version": "2.8.0",
-      "Dependencies": []
-    },
-    "Google.Protobuf": {
-      "Id": "Google.Protobuf",
-      "Version": "3.6.1",
       "Dependencies": []
     },
     "Humanizer.Core": {
@@ -220,24 +182,6 @@
       "Version": "7.10.6071",
       "Dependencies": []
     },
-    "MySql.Data": {
-      "Id": "MySql.Data",
-      "Version": "8.0.17",
-      "Dependencies": [
-        {
-          "Item1": "BouncyCastle",
-          "Item2": "[1.8.3.1, )"
-        },
-        {
-          "Item1": "Google.Protobuf",
-          "Item2": "[3.6.1, )"
-        },
-        {
-          "Item1": "SSH.NET",
-          "Item2": "[2016.1.0, )"
-        }
-      ]
-    },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
       "Version": "11.0.2",
@@ -258,19 +202,9 @@
       "Version": "1.0.0",
       "Dependencies": []
     },
-    "SSH.NET": {
-      "Id": "SSH.NET",
-      "Version": "2016.1.0",
-      "Dependencies": []
-    },
     "UiPath": {
       "Id": "UiPath",
       "Version": "19.7.7128.27029",
-      "Dependencies": []
-    },
-    "UiPath.Database.Activities": {
-      "Id": "UiPath.Database.Activities",
-      "Version": "1.2.6863.32528",
       "Dependencies": []
     },
     "UiPath.Excel.Activities": {
@@ -381,11 +315,6 @@
     "UiPath.Vision": {
       "Id": "UiPath.Vision",
       "Version": "1.6.1",
-      "Dependencies": []
-    },
-    "ztools.other.MySql.Data": {
-      "Id": "ztools.other.MySql.Data",
-      "Version": "6.9.8",
       "Dependencies": []
     }
   }

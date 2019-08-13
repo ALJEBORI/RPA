@@ -1,0 +1,25 @@
+Overview
+LESSON 1 – INTRODUCTION TO UIPATH – RECAPOverview
+This lesson offers an overview of some of the tools you will use when automating – UiPath Studio, UiPath
+Robot and UiPath Orchestrator. You have been familiarized with the UI of these tools and the role and 
+capabilities of the Orchestrator.Overview
+Automating processes is easy using UiPath because:
+UiPath has an embedded web scraping mechanism that understands the page structure and 
+can automatically identify lists or tables inside a webpage.
+Recorder functionality in UiPath is helpful to record the actions you want the robot to perform.
+Create reusable component that can be shared by multiple projects.
+There are over 400 activities in uipath studio already created for your convenience and 
+periodically enhanced with more.
+Orchestrator can be used for process and robots management.Overview
+Introduction
+About Licensing
+The User Interface
+Keyboard Shortcuts
+About Updating
+Introduction to Automation Debugging
+Managing Activities Packages
+Reusing Automations Library
+Installing the Chrome Extension
+Installing the Firefox Extension
+Connecting your Project to a Source Control System
+Activities Guide

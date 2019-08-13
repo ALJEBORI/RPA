@@ -11,7 +11,7 @@
           "lib/Net40/ICSharpCode.AvalonEdit.dll": {}
         }
       },
-      "BouncyCastle/1.8.3.1": {
+      "BouncyCastle/1.8.1": {
         "type": "package",
         "compile": {
           "lib/_._": {}
@@ -103,15 +103,6 @@
           }
         }
       },
-      "Google.Protobuf/3.6.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/Google.Protobuf.dll": {}
-        }
-      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -184,34 +175,6 @@
           "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
         }
       },
-      "MySql.Data/8.0.17": {
-        "type": "package",
-        "dependencies": {
-          "BouncyCastle": "1.8.3.1",
-          "Google.Protobuf": "3.6.1",
-          "SSH.NET": "2016.1.0"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.ComponentModel",
-          "System.ComponentModel.DataAnnotations",
-          "System.Configuration",
-          "System.Configuration.Install",
-          "System.Data",
-          "System.Drawing",
-          "System.Drawing.Design",
-          "System.Management",
-          "System.Transactions",
-          "System.Xml"
-        ],
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/MySql.Data.dll": {}
-        }
-      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -245,15 +208,6 @@
           "lib/net45/ICSharpCode.SharpZipLib.dll": {}
         }
       },
-      "SSH.NET/2016.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/_._": {}
-        },
-        "runtime": {
-          "lib/net40/Renci.SshNet.dll": {}
-        }
-      },
       "UiPath/19.7.7128.27029": {
         "type": "package",
         "compile": {
@@ -264,47 +218,6 @@
         },
         "build": {
           "build/_._": {}
-        }
-      },
-      "UiPath.Database.Activities/1.2.6863.32528": {
-        "type": "package",
-        "compile": {
-          "lib/net40-Client/_._": {}
-        },
-        "runtime": {
-          "lib/net40-Client/Microsoft.Data.ConnectionUI.Dialog.dll": {},
-          "lib/net40-Client/UiPath.Database.Activities.Design.dll": {},
-          "lib/net40-Client/UiPath.Database.Activities.dll": {},
-          "lib/net40-Client/UiPath.Database.dll": {}
-        },
-        "resource": {
-          "lib/net40-Client/de/UiPath.Database.Activities.Design.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40-Client/de/UiPath.Database.Activities.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40-Client/de/UiPath.Database.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40-Client/fr/UiPath.Database.Activities.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40-Client/fr/UiPath.Database.Activities.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40-Client/fr/UiPath.Database.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40-Client/ja/UiPath.Database.Activities.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net40-Client/ja/UiPath.Database.Activities.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net40-Client/ja/UiPath.Database.resources.dll": {
-            "locale": "ja"
-          }
         }
       },
       "UiPath.Excel.Activities/2.6.2": {
@@ -559,15 +472,6 @@
           "lib/net452/UiPath.Vision.Core.dll": {},
           "lib/net452/UiPath.Vision.dll": {}
         }
-      },
-      "ztools.other.MySql.Data/6.9.8": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/MySql.Data.dll": {}
-        }
       }
     }
   },
@@ -586,15 +490,14 @@
         "lib/Net40/ICSharpCode.AvalonEdit.xml"
       ]
     },
-    "BouncyCastle/1.8.3.1": {
-      "sha512": "YReOMI3d7GN7pTeLm5m//55Mhw8W23YB+/3DJj8uWZr2z0IuFvEM0KznogeXWDDfZXy0OoEgxySidFcH1xB9fw==",
+    "BouncyCastle/1.8.1": {
+      "sha512": "nH+P67LavO5EcxjKdBxFfRdfdFhivS3Xp3+0br1KcpCI8DM6ksCWy6YYZjk7XFV+VsHGtkUovwIZ/vmCp42geA==",
       "type": "package",
-      "path": "bouncycastle/1.8.3.1",
+      "path": "bouncycastle/1.8.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "bouncycastle.1.8.3.1.nupkg.sha512",
+        "Readme.txt",
+        "bouncycastle.1.8.1.nupkg.sha512",
         "bouncycastle.nuspec",
         "lib/BouncyCastle.Crypto.dll"
       ]
@@ -677,21 +580,6 @@
         "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
         "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
         "tools/install.ps1"
-      ]
-    },
-    "Google.Protobuf/3.6.1": {
-      "sha512": "741fGeDQjixBJaU2j+0CbrmZXsNJkTn/hWbOh4fLVXndHsCclJmWznCPWrJmPoZKvajBvAz3e8ECJOUvRtwjNQ==",
-      "type": "package",
-      "path": "google.protobuf/3.6.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "google.protobuf.3.6.1.nupkg.sha512",
-        "google.protobuf.nuspec",
-        "lib/net45/Google.Protobuf.dll",
-        "lib/net45/Google.Protobuf.xml",
-        "lib/netstandard1.0/Google.Protobuf.dll",
-        "lib/netstandard1.0/Google.Protobuf.xml"
       ]
     },
     "Humanizer.Core/2.4.2": {
@@ -797,23 +685,6 @@
         "microsoft.visualstudio.ole.interop.nuspec"
       ]
     },
-    "MySql.Data/8.0.17": {
-      "sha512": "yfwJ+4L6RqRW3N2qUSOzHGehJNTMes8GB4XnOTO4m3s7P/lVgoL/nLL91XU+7XEC3j2QHHTJZX2Mia1nY/Gtlg==",
-      "type": "package",
-      "path": "mysql.data/8.0.17",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/MySql.Data.dll",
-        "lib/net452/MySql.Data.xml",
-        "lib/netstandard1.6/MySql.Data.dll",
-        "lib/netstandard1.6/MySql.Data.xml",
-        "lib/netstandard2.0/MySql.Data.dll",
-        "lib/netstandard2.0/MySql.Data.xml",
-        "mysql.data.8.0.17.nupkg.sha512",
-        "mysql.data.nuspec"
-      ]
-    },
     "Newtonsoft.Json/11.0.2": {
       "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
@@ -890,33 +761,6 @@
         "sharpziplib.nuspec"
       ]
     },
-    "SSH.NET/2016.1.0": {
-      "sha512": "b0fcFFOE044KNRhq1uGujmK04ab+OzA9xARdeVCoZrY6I4D1IIaR6dn6qBIa+er4bJapGBhznDitwcRQpSRC0w==",
-      "type": "package",
-      "path": "ssh.net/2016.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Renci.SshNet.dll",
-        "lib/net35/Renci.SshNet.xml",
-        "lib/net40/Renci.SshNet.dll",
-        "lib/net40/Renci.SshNet.xml",
-        "lib/netstandard1.3/Renci.SshNet.dll",
-        "lib/netstandard1.3/Renci.SshNet.xml",
-        "lib/sl4/Renci.SshNet.dll",
-        "lib/sl4/Renci.SshNet.xml",
-        "lib/sl5/Renci.SshNet.dll",
-        "lib/sl5/Renci.SshNet.xml",
-        "lib/uap10/Renci.SshNet.dll",
-        "lib/uap10/Renci.SshNet.xml",
-        "lib/wp71/Renci.SshNet.dll",
-        "lib/wp71/Renci.SshNet.xml",
-        "lib/wp8/Renci.SshNet.dll",
-        "lib/wp8/Renci.SshNet.xml",
-        "ssh.net.2016.1.0.nupkg.sha512",
-        "ssh.net.nuspec"
-      ]
-    },
     "UiPath/19.7.7128.27029": {
       "sha512": "qwGn1866LHnldXmQnKGABNcppK0eVtS5QkUSS3fNMPQ/bbvFRhlZMjjI/UQvRzK/VrrSO3F1fiPaBi0mE7+w7A==",
       "type": "package",
@@ -970,29 +814,6 @@
         "lib/UiPath.Interop.dll",
         "uipath.19.7.7128.27029.nupkg.sha512",
         "uipath.nuspec"
-      ]
-    },
-    "UiPath.Database.Activities/1.2.6863.32528": {
-      "sha512": "eNPiEjZztYygiGSvHoQla7A/IJZ54fa3qVkQRG7W+ANyI4mWsjkq0fKbPThaRIThrpJVwyU+0VMavTpHZCNKpQ==",
-      "type": "package",
-      "path": "uipath.database.activities/1.2.6863.32528",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net40-Client/Microsoft.Data.ConnectionUI.Dialog.dll",
-        "lib/net40-Client/UiPath.Database.Activities.Design.dll",
-        "lib/net40-Client/UiPath.Database.Activities.dll",
-        "lib/net40-Client/UiPath.Database.dll",
-        "lib/net40-Client/de/UiPath.Database.Activities.Design.resources.dll",
-        "lib/net40-Client/de/UiPath.Database.Activities.resources.dll",
-        "lib/net40-Client/de/UiPath.Database.resources.dll",
-        "lib/net40-Client/fr/UiPath.Database.Activities.Design.resources.dll",
-        "lib/net40-Client/fr/UiPath.Database.Activities.resources.dll",
-        "lib/net40-Client/fr/UiPath.Database.resources.dll",
-        "lib/net40-Client/ja/UiPath.Database.Activities.Design.resources.dll",
-        "lib/net40-Client/ja/UiPath.Database.Activities.resources.dll",
-        "lib/net40-Client/ja/UiPath.Database.resources.dll",
-        "uipath.database.activities.1.2.6863.32528.nupkg.sha512",
-        "uipath.database.activities.nuspec"
       ]
     },
     "UiPath.Excel.Activities/2.6.2": {
@@ -1238,37 +1059,15 @@
         "uipath.vision.1.6.1.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
-    },
-    "ztools.other.MySql.Data/6.9.8": {
-      "sha512": "D0GjPl3+q1XEN+NAcQFMzykEcJniy8Q3pmknE4kTuhTx28ws5r//8caJ7dXnbqdYyh0v8qnJbO2jGde5xs3BHw==",
-      "type": "package",
-      "path": "ztools.other.mysql.data/6.9.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGES",
-        "Readme.txt",
-        "content/app.config.transform",
-        "content/web.config.transform",
-        "lib/net20-cf/MySql.Data.CF.dll",
-        "lib/net20/MySql.Data.dll",
-        "lib/net40/MySql.Data.dll",
-        "lib/net45/MySql.Data.dll",
-        "ztools.other.mysql.data.6.9.8.nupkg.sha512",
-        "ztools.other.mysql.data.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "MySql.Data >= 8.0.17 <= 8.0.17",
-      "UiPath.Database.Activities >= 1.2.6863.32528 <= 1.2.6863.32528",
       "UiPath.Excel.Activities >= 2.6.2 <= 2.6.2",
       "UiPath.Mail.Activities >= 1.5.1 <= 1.5.1",
       "UiPath.System.Activities >= 19.7.0 <= 19.7.0",
-      "UiPath.UIAutomation.Activities >= 19.7.0 <= 19.7.0",
-      "ztools.other.MySql.Data >= 6.9.8 <= 6.9.8"
+      "UiPath.UIAutomation.Activities >= 19.7.0 <= 19.7.0"
     ]
   },
   "packageFolders": {
@@ -1276,25 +1075,15 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "DBExample",
-      "projectName": "DBExample",
-      "projectPath": "C:\\Moh_Work\\RPA\\RPA_Projects\\DBExample\\.local",
+      "projectUniqueName": "smtpemail",
+      "projectName": "smtpemail",
+      "projectPath": "C:\\Moh_Work\\RPA\\RPA_Projects\\smtpemail\\.local",
       "packagesPath": "C:\\Users\\HB\\.nuget\\packages\\",
-      "outputPath": "C:\\Moh_Work\\RPA\\RPA_Projects\\DBExample\\.local"
+      "outputPath": "C:\\Moh_Work\\RPA\\RPA_Projects\\smtpemail\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
-          "MySql.Data": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          "UiPath.Database.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.2.6863.32528, 1.2.6863.32528]"
-          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -1314,23 +1103,9 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[19.7.0, 19.7.0]"
-          },
-          "ztools.other.MySql.Data": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[6.9.8, 6.9.8]"
           }
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ztools.other.MySql.Data 6.9.8' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "ztools.other.MySql.Data"
-    }
-  ]
+  }
 }
